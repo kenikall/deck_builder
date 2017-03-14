@@ -1,0 +1,3 @@
+<% deck.energy.each do |name, atributes| %>
+  <p><%= atributes[0] %>&times; <%=image_tag(atributes[1], alt: name, width: '36px', height: '50px')%></p>
+<% end %>
