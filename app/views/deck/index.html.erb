@@ -1,0 +1,36 @@
+<h2>Decks</h2>
+
+<%= link_to 'Build your own deck', new_deck_path, class: 'btn btn-primary col-md-2 pull-left' %>
+
+
+<table class="table table-striped decks text-center">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Created By</th>
+      <th>Date Created</th>
+      <th>Record</th>
+      <th>Type</th>
+      <th>Basic Pokemon</th>
+      <th>Evolved Pokemon</th>
+      <th>Trainers</th>
+      <th>Energy</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <%- @decks.each do |deck| -%>
+      <tr>
+        <td><%= deck.name %></td>
+        <td><%= l(deck.created_at, format: :short) %></td>
+        <td><%= deck.wins %>/<%= deck.losses %></td>
+        <td><%= deck.type %></td>
+        <td><%= deck.basic_pokemon.length %></td>
+        <td><%= deck.evolved_pokemon.length %></td>
+        <td><%= deck.trainers.length %></td>
+        <td><%= render "energy", deck: deck %></td>
+        <td><%= button_to 'show deck', deck_path(deck), method: 'get', class: 'btn btn-info'%></td>
+      </tr>
+    <%- end -%>
+  </tbody>
+</table>

@@ -216,7 +216,7 @@ DEPENDENCIES
   pokemon_tcg_sdk (~> 2.0)
   puma (~> 3.0)
   rails (~> 5.0.1)
-  rspec-rails
+  rspec-rails (~> 3.5)
   sass-rails (~> 5.0)
   spring
   spring-watcher-listen (~> 2.0.0)

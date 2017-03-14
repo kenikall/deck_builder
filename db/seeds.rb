@@ -1,7 +1,23 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+deck_1 = Deck.create()
+  deck_1.add_cards(Pokemon::Card.find('xy1-79'), 3)
+  deck_1.add_cards(Pokemon::Card.find('xy1-78'), 3)
+  deck_1.add_cards(Pokemon::Card.find('bw11-88'), 2)
+  deck_1.add_cards(Pokemon::Card.find('xy3-20'), 2)
+  deck_1.add_cards(Pokemon::Card.find('bw11-45'), 2)
+  deck_1.add_cards(Pokemon::Card.find('bw10-60'))
+  deck_1.add_cards(Pokemon::Card.find('bw9-47'))
+  deck_1.add_cards(Pokemon::Card.find('xy4-101'), 4)
+  deck_1.add_cards(Pokemon::Card.find('bw11-96'), 4)
+  deck_1.add_cards(Pokemon::Card.find('xy2-90'), 2)
+  deck_1.add_cards(Pokemon::Card.find('xy1-123'))
+  deck_1.add_cards(Pokemon::Card.find('xy4-110'))
+  deck_1.add_cards(Pokemon::Card.find('bw8-118'))
+  deck_1.add_cards(Pokemon::Card.find('xy4-109'), 4)
+  deck_1.add_cards(Pokemon::Card.find('xy6-93'), 4)
+  deck_1.add_cards(Pokemon::Card.find('xy1-121'), 4)
+  deck_1.add_cards(Pokemon::Card.find('bw8-123'), 4)
+  deck_1.add_cards(Pokemon::Card.find('xy8-126'), 2)
+  deck_1.add_cards(Pokemon::Card.find('xy4-97'), 2)
+  deck_1.add_cards(Pokemon::Card.find('bw7-137'))
+  deck_1.add_cards(Pokemon::Card.find('xy1-138'), 8)
+  deck_1.add_cards(Pokemon::Card.find('xy4-111'), 4)
